@@ -1,0 +1,26 @@
+  
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: feed-api
+  labels:
+    app: feed-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: feed-api
+  template:
+    metadata:
+      labels:
+        app: feed-api
+    spec:
+      containers:
+      - name: udagram-feed-api
+        image: forsythetony/udagram_feed_api:efddb6a3
+        ports:
+        - containerPort: 8080
+        envFrom:
+          - secretRef:
+              name: feed-api-secrets
+              
