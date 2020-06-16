@@ -22,7 +22,7 @@ spec:
         - containerPort: 8080
         envFrom:
           - secretRef:
-              name: feed-api-secrets
+              name: api-secrets
         env:
           - name: UDAGRAM_POSTGRES_HOST
             value: "udagram-user-feed-db.cognlgykyfwj.us-east-2.rds.amazonaws.com"
@@ -30,5 +30,3 @@ spec:
             value: "postgres"
           - name: UDAGRAM_POSTGRES_DB
             value: "postgres"
-
-              
