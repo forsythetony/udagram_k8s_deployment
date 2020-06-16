@@ -5,8 +5,6 @@ metadata:
 spec:
   selector:
     app: reverseproxy
-    tier: backend
   ports:
   - protocol: TCP
-    port: 80
-    targetPort: 8080
+    port: 8080
