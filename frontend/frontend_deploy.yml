@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: forsythetony/udagram_frontend:7921656b
+        image: forsythetony/udagram_frontend:417047f9
         ports:
         - containerPort: 80
