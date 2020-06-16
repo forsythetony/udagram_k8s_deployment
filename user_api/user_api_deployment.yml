@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: udagram-user-api
-        image: forsythetony/udagram_user_api:f20767f0
+        image: forsythetony/udagram_user_api:fae732ca
         ports:
         - containerPort: 8080
         envFrom:
@@ -30,3 +30,5 @@ spec:
             value: "postgres"
           - name: UDAGRAM_POSTGRES_DB
             value: "postgres"
+          - name: UDAGRAM_FRONTEND_URL
+            value: "http://a73bff37a9b4543679d683955d8f8ccd-dd9ba5b14d51e505.elb.us-east-2.amazonaws.com"
