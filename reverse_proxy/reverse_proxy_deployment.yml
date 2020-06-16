@@ -14,7 +14,7 @@ spec:
         app: reverseproxy
     spec:
       containers:
-      - image: forsythetony/udagram_reverse_proxy
+      - image: forsythetony/udagram_reverse_proxy:5301dd5
         name: reverseproxy
         imagePullPolicy: Always          
         resources:
